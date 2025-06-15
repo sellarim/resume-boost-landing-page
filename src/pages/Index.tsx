@@ -177,7 +177,11 @@ const Index = () => {
             {/* Depois */}
             <div className="flex-1 bg-[#0a2540] text-white rounded-xl p-6 shadow text-center border border-[#8f5cff]">
               <span className="inline-block px-3 py-1 bg-[#8f5cff] text-white font-bold mb-3 rounded">DEPOIS</span>
-              <img src="/photo-1649972904349-6e44c42644a7" alt="Currículo Depois" className="w-full max-w-xs h-48 object-cover rounded mt-1 mb-5 mx-auto" />
+              <img
+                src="/lovable-uploads/c8d0b988-c458-4bc1-9a9f-593ad8209b49.png"
+                alt="Currículo Depois"
+                className="w-full max-w-xs h-48 object-cover rounded mt-1 mb-5 mx-auto"
+              />
               <ul className="text-sm text-[#d9e6fb] text-left list-disc px-4">
                 <li>Layout valorizado e leitura escaneável</li>
                 <li>Resumo otimizado, sem enrolação</li>
