@@ -99,7 +99,7 @@ const Index = () => {
           <div className="mt-8 grid md:grid-cols-1 gap-6">
             <div className="flex items-center gap-3 p-5 bg-[#f3f6fa] rounded-lg">
               <Rocket size={28} className="text-[#8f5cff]" />
-              <span className="text-base font-medium text-[#0a2540]">Dicas para LinkedIn, entrevista e posicionamento</span>
+              <span className="text-base font-medium text-[#0a2540]">Use a mesma IA dos recrutadores agora pra corrigir seu curriculo</span>
             </div>
             {/* Removido: grupo no WhatsApp */}
           </div>
