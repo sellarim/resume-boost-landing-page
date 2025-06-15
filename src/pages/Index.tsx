@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ChevronDown, ChevronUp, MessageCircle, CheckCircle2, FileText, FileSearch2, Rocket, BookText, Users2, Star } from "lucide-react";
 
@@ -59,7 +58,7 @@ const Index = () => {
           <div className="flex justify-center gap-4 animate-scale-in">
             <a
               href="#cta"
-              className={ctaButton + " " + ctaHighlightPurple + " text-lg animate-pulse"}
+              className={ctaButton + " " + ctaHighlightPurple + " text-lg"}
               style={{ boxShadow: "0 4px 32px 0 rgba(143,92,255,0.25)" }}
             >
               Acessar agora com desconto limitado
@@ -224,7 +223,7 @@ const Index = () => {
         <p className="text-lg text-[#d9e6fb] text-center mb-8 max-w-xl animate-fade-in">Não perca tempo com currículos que te sabotam: acesse o Guia Definitivo do Currículo agora e saia na frente no mercado tech.</p>
         <a
           href="https://checkout-link-exemplo.com"
-          className={ctaButton + " " + ctaHighlightPurple + " text-xl animate-pulse"}
+          className={ctaButton + " " + ctaHighlightPurple + " text-xl"}
         >
           Acessar com desconto por tempo limitado
         </a>
