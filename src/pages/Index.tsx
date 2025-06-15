@@ -300,7 +300,6 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-5 text-[#3b2d84] font-semibold text-center text-base flex items-center gap-2">
-            <span className="text-xl">🎓</span>
             O conhecimento vai além do guia — a comunidade é onde você cresce junto com quem está construindo o mesmo futuro.
           </div>
         </div>
