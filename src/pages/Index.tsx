@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ChevronDown, ChevronUp, MessageCircle, CheckCircle2, FileText, FileSearch2, Rocket, BookText, Users2, Star } from "lucide-react";
 
@@ -33,6 +32,16 @@ const faqs = [
     q: "E se eu não gostar?",
     a: "Você tem 7 dias de garantia - devolvemos seu dinheiro sem perguntas.",
   },
+];
+
+const precoOriginal = "R$79,90";
+const precoPromocional = "R$29,90";
+const tituloPreco = "Não perca a chance de turbinar seu currículo e sua carreira!";
+const vantagens = [
+  "Acesso imediato ao Guia prático do Currículo com todos os segredos para se destacar",
+  "Inteligência Artificial exclusiva que analisa e corrige seu currículo em minutos",
+  "Exemplos validados por profissionais de dados e tech já empregados",
+  "Suporte para dúvidas sobre cada seção do currículo",
 ];
 
 const Index = () => {
@@ -176,6 +185,35 @@ const Index = () => {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* NOVA SESSÃO DE PREÇO */}
+      <section className="w-full flex justify-center py-6 bg-white border-b border-[#e4eaff]">
+        <div className="bg-[#f8fafd] rounded-2xl shadow-lg p-7 pb-8 max-w-md w-full flex flex-col items-center border border-[#e4eaff]">
+          <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-[#0a2540]">{tituloPreco}</h3>
+          <ul className="mb-6 space-y-2 text-[#0a2540] text-base">
+            {vantagens.map((vant, i) => (
+              <li key={i} className="flex items-start gap-2">
+                <span className="mt-1">
+                  <svg width="18" height="18" fill="none"><circle cx="9" cy="9" r="9" fill="#22c55e"/><path d="M6.8 9.9l1.7 1.7 2.7-3.2" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </span>
+                <span>{vant}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="my-3 w-full flex flex-col items-center bg-white rounded-md py-4 border border-[#e4eaff]">
+            <span className="text-[#6b7791] text-lg line-through mb-1">De: <b>{precoOriginal}</b></span>
+            <span className="text-[#0a2540] mb-2">Por apenas</span>
+            <span className="text-3xl font-extrabold text-[#2463eb]">{precoPromocional}</span>
+            <span className="bg-[#e9f7ef] text-[#22914d] text-xs rounded font-semibold px-2 py-1 mt-1">preço promocional</span>
+          </div>
+          <a
+            href="https://checkout-link-exemplo.com"
+            className="mt-4 w-full rounded-lg bg-[#2463eb] hover:bg-[#1e4fc1] text-white font-semibold py-3 text-lg transition-colors text-center shadow"
+          >
+            Quero garantir meu acesso!
+          </a>
         </div>
       </section>
 
