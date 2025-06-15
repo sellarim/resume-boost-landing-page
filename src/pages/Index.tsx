@@ -169,12 +169,6 @@ const Index = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-2 mt-2 bg-[#e9f7ef] rounded-lg px-4 py-3">
-            <span className="text-[#22c55e] text-lg">✅</span>
-            <span className="text-[#0a2540] text-sm font-medium">
-              Já ajudou a corrigir mais de <b>300 currículos reais</b> e segue aprendendo com os melhores da área de dados.
-            </span>
-          </div>
         </div>
       </section>
 
