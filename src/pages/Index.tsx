@@ -154,10 +154,10 @@ const Index = () => {
               <img
                 src="/lovable-uploads/a42d453d-859a-4160-a9a7-7b70b0cfcc67.png"
                 alt="Exemplo de currículo com estrutura errada"
-                className="w-full max-w-xs h-48 object-contain rounded mt-1 mb-5 mx-auto bg-white"
+                className="w-full max-w-xs h-56 object-contain rounded mt-1 mb-5 mx-auto bg-white"
                 style={{ background: "#fff" }}
               />
-              <ul className="text-sm text-[#dd1c1a] text-left list-disc px-4">
+              <ul className="text-sm text-[#6b7791] text-left list-disc px-4">
                 <li>Erros de digitação e ortografia (ex: "Posttion", "Fducation")</li>
                 <li>Seções mal organizadas e confusas</li>
                 <li>Layout difícil de ler; texto muito colado</li>
