@@ -180,7 +180,8 @@ const Index = () => {
               <img
                 src="/lovable-uploads/c8d0b988-c458-4bc1-9a9f-593ad8209b49.png"
                 alt="Currículo Depois"
-                className="w-full max-w-xs h-48 object-cover rounded mt-1 mb-5 mx-auto"
+                className="w-full max-w-xs h-56 object-contain rounded mt-1 mb-5 mx-auto bg-white"
+                style={{ background: "#fff" }}
               />
               <ul className="text-sm text-[#d9e6fb] text-left list-disc px-4">
                 <li>Layout valorizado e leitura escaneável</li>
