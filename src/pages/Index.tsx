@@ -166,7 +166,7 @@ const Index = () => {
                 className="w-full max-w-xs h-56 object-contain rounded mt-1 mb-5 mx-auto"
                 style={{ background: "transparent" }}
               />
-              <ul className="text-sm text-[#6b7791] text-left list-disc px-4 flex-1">
+              <ul className="text-sm text-[#6b7791] text-left list-disc px-4 flex-1 min-h-[90px] flex flex-col justify-between">
                 <li>Erros de digitação e ortografia (ex: "Posttion", "Fducation")</li>
                 <li>Seções mal organizadas e confusas</li>
                 <li>Layout difícil de ler; texto muito colado</li>
@@ -183,10 +183,12 @@ const Index = () => {
                 className="w-full max-w-xs h-56 object-contain rounded mt-1 mb-5 mx-auto"
                 style={{ background: "transparent" }}
               />
-              <ul className="text-sm text-[#d9e6fb] text-left list-disc px-4 flex-1">
+              <ul className="text-sm text-[#d9e6fb] text-left list-disc px-4 flex-1 min-h-[90px] flex flex-col justify-between">
                 <li>Layout valorizado e leitura escaneável</li>
                 <li>Resumo otimizado, sem enrolação</li>
                 <li>Linguagem alinhada para vagas de dados e tech</li>
+                <li className="invisible">preencher</li>
+                <li className="invisible">preencher</li>
               </ul>
             </div>
           </div>
