@@ -1,10 +1,20 @@
 import { useState } from "react";
-import { ChevronDown, ChevronUp, MessageCircle, CheckCircle2, FileText, FileSearch2, Rocket, BookText, Users2, Star } from "lucide-react";
+import {
+  ChevronDown,
+  ChevronUp,
+  MessageCircle,
+  CheckCircle2,
+  FileText,
+  FileSearch2,
+  Rocket,
+  BookText,
+  Users2,
+  Star,
+} from "lucide-react";
 
-// Resolve image URLs relative to this file so Vite includes them in the build
-// and generates paths that work with the GitHub Pages base URL.
-const antesImg = new URL("../../public/lovable-uploads/a42d453d-859a-4160-a9a7-7b70b0cfcc67.png", import.meta.url).href;
-const depoisImg = new URL("../../public/lovable-uploads/c8d0b988-c458-4bc1-9a9f-593ad8209b49.png", import.meta.url).href;
+// Use BASE_URL so the images resolve correctly in GitHub Pages
+const antesImg = `${import.meta.env.BASE_URL}lovable-uploads/a42d453d-859a-4160-a9a7-7b70b0cfcc67.png`;
+const depoisImg = `${import.meta.env.BASE_URL}lovable-uploads/c8d0b988-c458-4bc1-9a9f-593ad8209b49.png`;
 
 // Depoimentos mockados:
 const testimonials = [
