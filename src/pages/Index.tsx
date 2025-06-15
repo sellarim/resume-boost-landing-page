@@ -158,15 +158,17 @@ const Index = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] text-center mb-10">Antes e Depois: Veja a diferença</h2>
           <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
             {/* Antes */}
-            <div className="flex-1 bg-white rounded-xl p-6 shadow text-center border border-[#e6eaff] min-w-[280px] max-w-[370px] h-full flex flex-col">
-              <span className="inline-block px-3 py-1 bg-[#e6eaff] text-[#6b7791] font-bold mb-3 rounded">ANTES</span>
-              <img
-                src="/lovable-uploads/a42d453d-859a-4160-a9a7-7b70b0cfcc67.png"
-                alt="Exemplo de currículo com estrutura errada"
-                className="w-full max-w-xs h-56 object-contain rounded mt-1 mb-5 mx-auto"
-                style={{ background: "transparent" }}
-              />
-              <ul className="text-sm text-[#6b7791] text-left list-disc px-4 flex-1 min-h-[90px] flex flex-col justify-between">
+            <div className="flex-1 bg-white rounded-xl p-6 shadow text-center border border-[#e6eaff] min-w-[280px] max-w-[370px] h-[420px] flex flex-col justify-between md:h-[420px]">
+              <div>
+                <span className="inline-block px-3 py-1 bg-[#e6eaff] text-[#6b7791] font-bold mb-3 rounded">ANTES</span>
+                <img
+                  src="/lovable-uploads/a42d453d-859a-4160-a9a7-7b70b0cfcc67.png"
+                  alt="Exemplo de currículo com estrutura errada"
+                  className="w-full max-w-xs h-40 object-contain rounded mt-2 mb-5 mx-auto"
+                  style={{ background: "transparent" }}
+                />
+              </div>
+              <ul className="text-sm text-[#6b7791] text-left list-disc px-4 flex-1 flex flex-col justify-start gap-2">
                 <li>Erros de digitação e ortografia (ex: "Posttion", "Fducation")</li>
                 <li>Seções mal organizadas e confusas</li>
                 <li>Layout difícil de ler; texto muito colado</li>
@@ -175,20 +177,21 @@ const Index = () => {
               </ul>
             </div>
             {/* Depois */}
-            <div className="flex-1 bg-[#0a2540] text-white rounded-xl p-6 shadow text-center border border-[#8f5cff] min-w-[280px] max-w-[370px] h-full flex flex-col">
-              <span className="inline-block px-3 py-1 bg-[#8f5cff] text-white font-bold mb-3 rounded">DEPOIS</span>
-              <img
-                src="/lovable-uploads/c8d0b988-c458-4bc1-9a9f-593ad8209b49.png"
-                alt="Currículo Depois"
-                className="w-full max-w-xs h-56 object-contain rounded mt-1 mb-5 mx-auto"
-                style={{ background: "transparent" }}
-              />
-              <ul className="text-sm text-[#d9e6fb] text-left list-disc px-4 flex-1 min-h-[90px] flex flex-col justify-between">
+            <div className="flex-1 bg-[#0a2540] text-white rounded-xl p-6 shadow text-center border border-[#8f5cff] min-w-[280px] max-w-[370px] h-[420px] flex flex-col justify-between md:h-[420px]">
+              <div>
+                <span className="inline-block px-3 py-1 bg-[#8f5cff] text-white font-bold mb-3 rounded">DEPOIS</span>
+                <img
+                  src="/lovable-uploads/c8d0b988-c458-4bc1-9a9f-593ad8209b49.png"
+                  alt="Currículo Depois"
+                  className="w-full max-w-xs h-40 object-contain rounded mt-2 mb-5 mx-auto"
+                  style={{ background: "transparent" }}
+                />
+              </div>
+              <ul className="text-sm text-[#d9e6fb] text-left list-disc px-4 flex-1 flex flex-col justify-start gap-2">
                 <li>Layout valorizado e leitura escaneável</li>
                 <li>Resumo otimizado, sem enrolação</li>
                 <li>Linguagem alinhada para vagas de dados e tech</li>
-                <li className="invisible">preencher</li>
-                <li className="invisible">preencher</li>
+                {/* Ajuste de "invisible" removido para manter alinhamento pelo padding geral. */}
               </ul>
             </div>
           </div>
