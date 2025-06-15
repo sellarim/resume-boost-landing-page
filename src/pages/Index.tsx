@@ -151,11 +151,18 @@ const Index = () => {
             {/* Antes */}
             <div className="flex-1 bg-white rounded-xl p-6 shadow text-center border border-[#e6eaff]">
               <span className="inline-block px-3 py-1 bg-[#e6eaff] text-[#6b7791] font-bold mb-3 rounded">ANTES</span>
-              <img src="/photo-1486312338219-ce68d2c6f44d" alt="Currículo Antes" className="w-full max-w-xs h-48 object-cover rounded mt-1 mb-5 mx-auto" />
-              <ul className="text-sm text-[#6b7791] text-left list-disc px-4">
-                <li>Seções confusas e sem destaque</li>
-                <li>Erros de português despercebidos</li>
-                <li>Falta de palavras-chave do mercado</li>
+              <img
+                src="/lovable-uploads/a42d453d-859a-4160-a9a7-7b70b0cfcc67.png"
+                alt="Exemplo de currículo com estrutura errada"
+                className="w-full max-w-xs h-48 object-contain rounded mt-1 mb-5 mx-auto bg-white"
+                style={{ background: "#fff" }}
+              />
+              <ul className="text-sm text-[#dd1c1a] text-left list-disc px-4">
+                <li>Erros de digitação e ortografia (ex: "Posttion", "Fducation")</li>
+                <li>Seções mal organizadas e confusas</li>
+                <li>Layout difícil de ler; texto muito colado</li>
+                <li>Falta de informações relevantes e exemplos claros</li>
+                <li>Ausência de palavras-chave importantes para a área</li>
               </ul>
             </div>
             {/* Depois */}
@@ -234,5 +241,4 @@ const Index = () => {
     </div>
   );
 };
-
 export default Index;
