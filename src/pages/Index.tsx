@@ -52,8 +52,11 @@ const Index = () => {
           <h1 className="text-3xl md:text-5xl font-bold leading-tight animate-fade-in mb-4">
             Guia definitivo + inteligência do RH
           </h1>
+          <p className="text-lg md:text-xl font-semibold mb-2 animate-fade-in text-[#add2fd]">
+            Segunda versão do guia: mais de 300 vendidos na anterior
+          </p>
           <p className="text-xl md:text-2xl font-medium mb-8 mt-2 animate-fade-in text-[#d9e6fb]">
-            Tudo que você precisa saber para montar um curriculo e uma IA personalizada para te ajudar a montar o seu curriculo definitivo
+            Agora atualizado e com uma IA personalizada – tudo o que você precisa saber para montar um currículo matador, corrigido em minutos por inteligência artificial exclusiva para você.
           </p>
           <div className="flex justify-center gap-4 animate-scale-in">
             <a
@@ -67,12 +70,9 @@ const Index = () => {
           <div className="mt-10 flex justify-center gap-8 flex-wrap">
             <div className="flex items-center gap-2">
               <Star size={20} className="text-yellow-400" />
-              <span className="text-white/80 text-base font-medium">+250 currículos corrigidos</span>
+              <span className="text-white/80 text-base font-medium">+300 currículos corrigidos na versão anterior</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Users2 size={20} className="text-green-400" />
-              <span className="text-white/80 text-base font-medium">+170 profissionais no grupo</span>
-            </div>
+            {/* Removido: indicador de grupo de profissionais */}
           </div>
         </div>
       </section>
@@ -95,15 +95,12 @@ const Index = () => {
               <p className="text-lg font-medium text-[#0a2540]">Exemplos de currículos validados por quem já está empregado</p>
             </div>
           </div>
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
+          <div className="mt-8 grid md:grid-cols-1 gap-6">
             <div className="flex items-center gap-3 p-5 bg-[#f3f6fa] rounded-lg">
               <Rocket size={28} className="text-[#8f5cff]" />
               <span className="text-base font-medium text-[#0a2540]">Dicas para LinkedIn, entrevista e posicionamento</span>
             </div>
-            <div className="flex items-center gap-3 p-5 bg-[#f3f6fa] rounded-lg">
-              <Users2 size={28} className="text-[#22c55e]" />
-              <span className="text-base font-medium text-[#0a2540]">Grupo no WhatsApp com dúvidas respondidas semanalmente</span>
-            </div>
+            {/* Removido: grupo no WhatsApp */}
           </div>
         </div>
       </section>
@@ -140,7 +137,7 @@ const Index = () => {
           </div>
           <p className="text-center text-[#0a2540] mt-8 text-base">
             <CheckCircle2 className="inline mb-1 text-[#22c55e]" size={22} />
-            Mais de <b>250 currículos corrigidos</b> e feedbacks verificados.
+            Mais de <b>300 currículos corrigidos</b> na versão anterior e feedbacks verificados.
           </p>
         </div>
       </section>
