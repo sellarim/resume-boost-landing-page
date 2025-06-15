@@ -64,6 +64,32 @@ This project is built with:
 
 Simply open [Lovable](https://lovable.dev/projects/c4e532e7-f2b8-4551-9f19-e5953012040e) and click on Share -> Publish.
 
+## Deploying to GitHub Pages
+
+If you prefer to host the static build on GitHub Pages, follow these steps:
+
+1. Install the **gh-pages** package:
+
+   ```sh
+   npm install -D gh-pages
+   ```
+
+2. Build the project:
+
+   ```sh
+   npm run build
+   ```
+
+3. Deploy the contents of the `dist` folder:
+
+   ```sh
+   npm run deploy
+   ```
+
+The `vite.config.ts` file has the `base` option set to `/resume-boost-landing-page/` so assets load correctly on GitHub Pages.
+
+After running `npm run deploy`, configure the repository to serve the **gh-pages** branch in the GitHub Pages settings.
+
 ## Can I connect a custom domain to my Lovable project?
 
 Yes, you can!
