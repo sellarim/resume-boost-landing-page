@@ -184,7 +184,7 @@ const Index = () => {
               <div>
                 <span className="inline-block px-3 py-1 bg-[#e6eaff] text-[#6b7791] font-bold mb-3 rounded">ANTES</span>
                 <img
-                  src="/lovable-uploads/a42d453d-859a-4160-a9a7-7b70b0cfcc67.png"
+                  src="lovable-uploads/a42d453d-859a-4160-a9a7-7b70b0cfcc67.png"
                   alt="Exemplo de currículo com estrutura errada"
                   className="w-full max-w-xs h-40 object-contain rounded mt-2 mb-5 mx-auto"
                   style={{ background: "transparent" }}
@@ -202,7 +202,7 @@ const Index = () => {
               <div>
                 <span className="inline-block px-3 py-1 bg-[#8f5cff] text-white font-bold mb-3 rounded">DEPOIS</span>
                 <img
-                  src="/lovable-uploads/c8d0b988-c458-4bc1-9a9f-593ad8209b49.png"
+                  src="lovable-uploads/c8d0b988-c458-4bc1-9a9f-593ad8209b49.png"
                   alt="Currículo Depois"
                   className="w-full max-w-xs h-40 object-contain rounded mt-2 mb-5 mx-auto"
                   style={{ background: "transparent" }}
