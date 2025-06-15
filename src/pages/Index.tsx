@@ -158,13 +158,12 @@ const Index = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] text-center mb-10">Antes e Depois: Veja a diferença</h2>
           <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
             {/* Antes */}
-            <div className="flex-1 bg-white rounded-xl p-6 shadow text-center border border-[#e6eaff]">
+            <div className="flex-1 bg-white rounded-xl p-6 shadow text-center border border-[#e6eaff] min-w-[280px] max-w-[370px]">
               <span className="inline-block px-3 py-1 bg-[#e6eaff] text-[#6b7791] font-bold mb-3 rounded">ANTES</span>
               <img
                 src="/lovable-uploads/a42d453d-859a-4160-a9a7-7b70b0cfcc67.png"
                 alt="Exemplo de currículo com estrutura errada"
-                className="w-full max-w-xs h-56 object-contain rounded mt-1 mb-5 mx-auto bg-white"
-                style={{ background: "#fff" }}
+                className="w-full max-w-xs h-56 object-contain rounded mt-1 mb-5 mx-auto"
               />
               <ul className="text-sm text-[#6b7791] text-left list-disc px-4">
                 <li>Erros de digitação e ortografia (ex: "Posttion", "Fducation")</li>
@@ -175,13 +174,12 @@ const Index = () => {
               </ul>
             </div>
             {/* Depois */}
-            <div className="flex-1 bg-[#0a2540] text-white rounded-xl p-6 shadow text-center border border-[#8f5cff]">
+            <div className="flex-1 bg-[#0a2540] text-white rounded-xl p-6 shadow text-center border border-[#8f5cff] min-w-[280px] max-w-[370px]">
               <span className="inline-block px-3 py-1 bg-[#8f5cff] text-white font-bold mb-3 rounded">DEPOIS</span>
               <img
                 src="/lovable-uploads/c8d0b988-c458-4bc1-9a9f-593ad8209b49.png"
                 alt="Currículo Depois"
-                className="w-full max-w-xs h-56 object-contain rounded mt-1 mb-5 mx-auto bg-white"
-                style={{ background: "#fff" }}
+                className="w-full max-w-xs h-56 object-contain rounded mt-1 mb-5 mx-auto"
               />
               <ul className="text-sm text-[#d9e6fb] text-left list-disc px-4">
                 <li>Layout valorizado e leitura escaneável</li>
