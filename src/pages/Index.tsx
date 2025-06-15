@@ -198,7 +198,7 @@ const Index = () => {
               </ul>
             </div>
             {/* Depois */}
-            <div className="flex-1 bg-[#0a2540] text-white rounded-xl p-6 shadow text-center border border-[#8f5cff] min-w-[280px] max-w-[370px] h-[420px] flex flex-col justify-between md:h-[420px]">
+            <div className="flex-1 bg-[#0a2540] text-white rounded-xl p-6 shadow text-center border border-[#8f5cff] min-w-[280px] max-w-xs h-[420px] flex flex-col justify-between md:h-[420px]">
               <div>
                 <span className="inline-block px-3 py-1 bg-[#8f5cff] text-white font-bold mb-3 rounded">DEPOIS</span>
                 <img
@@ -245,6 +245,64 @@ const Index = () => {
           >
             Quero garantir meu acesso!
           </a>
+        </div>
+      </section>
+
+      {/* NOVA SEÇÃO - Comunidade */}
+      <section className="w-full py-14 px-4 bg-[#f3f6fa] border-b border-[#e4eaff]">
+        <div className="max-w-3xl mx-auto flex flex-col items-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] mb-3 flex items-center gap-2">
+            <span className="text-2xl md:text-3xl">🤝</span>
+            Uma comunidade que cresce junto com você
+          </h2>
+          <p className="text-lg text-[#474f60] text-center mb-3">
+            Ao comprar o Guia, você também entra para um espaço colaborativo exclusivo com quem está na mesma jornada — e com acesso direto a mim, aos colegas e à IA.
+          </p>
+          <div className="bg-white rounded-xl shadow p-6 md:p-8 my-4 w-full text-[#0a2540]">
+            <p className="mb-5 text-base text-center">
+              Dentro da plataforma, você terá acesso a uma <strong>comunidade ativa</strong> onde:
+            </p>
+            <ul className="mb-2 flex flex-col gap-2">
+              <li><b>•</b> <b>Tirar dúvidas diretamente comigo</b></li>
+              <li><b>•</b> <b>Conversar com outros membros</b> que estão montando e ajustando seus currículos</li>
+              <li><b>•</b> A <b>IA também está presente nos fóruns</b> para responder perguntas objetivas e te guiar em tempo real</li>
+            </ul>
+            <div className="bg-[#f8fafd] rounded-lg p-4 text-[#474f60] text-center mt-5 mb-2">
+              <span className="block mb-2 text-base">
+                💡 É como ter uma mentoria coletiva e automatizada ao seu lado — com gente real te apoiando, compartilhando feedbacks e experiências.
+              </span>
+              <span className="block text-sm">
+                📚 Toda semana surgem novas perguntas, novos modelos e aprendizados. Você não precisa passar por essa fase sozinho.
+              </span>
+            </div>
+            {/* Destaques Visuais */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+              <div className="bg-[#eceafe] rounded-lg p-4 flex items-center gap-3">
+                <span className="text-2xl">👥</span>
+                <span className="text-base font-medium">Acesso imediato à comunidade exclusiva</span>
+              </div>
+              <div className="bg-[#e6fcf1] rounded-lg p-4 flex items-center gap-3">
+                <span className="text-2xl">🤖</span>
+                <span className="text-base font-medium">IA disponível nos fóruns para dúvidas técnicas</span>
+              </div>
+              <div className="bg-[#fef7e1] rounded-lg p-4 flex items-center gap-3">
+                <span className="text-2xl">💬</span>
+                <span className="text-base font-medium">Trocas entre membros que já estão aplicando</span>
+              </div>
+              <div className="bg-[#e5f0fe] rounded-lg p-4 flex items-center gap-3">
+                <span className="text-2xl">📈</span>
+                <span className="text-base font-medium">Ambiente que evolui com as demandas do mercado</span>
+              </div>
+              <div className="bg-[#edf4ed] rounded-lg p-4 flex items-center gap-3 sm:col-span-2">
+                <span className="text-2xl">🧠</span>
+                <span className="text-base font-medium">Insights semanais e aprendizados coletivos</span>
+              </div>
+            </div>
+          </div>
+          <div className="mt-5 text-[#3b2d84] font-semibold text-center text-base flex items-center gap-2">
+            <span className="text-xl">🎓</span>
+            O conhecimento vai além do guia — a comunidade é onde você cresce junto com quem está construindo o mesmo futuro.
+          </div>
         </div>
       </section>
 
