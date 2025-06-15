@@ -173,7 +173,6 @@ const Index = () => {
                 <li>Seções mal organizadas e confusas</li>
                 <li>Layout difícil de ler; texto muito colado</li>
                 <li>Falta de informações relevantes e exemplos claros</li>
-                <li>Ausência de palavras-chave importantes para a área</li>
               </ul>
             </div>
             {/* Depois */}
