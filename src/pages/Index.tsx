@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { ChevronDown, ChevronUp, MessageCircle, CheckCircle2, FileText, FileSearch2, Rocket, BookText, Users2, Star } from "lucide-react";
 
@@ -50,13 +51,13 @@ const Index = () => {
       <section className="w-full bg-[#0a2540] text-white pt-12 pb-16 md:py-20">
         <div className="max-w-3xl mx-auto text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight animate-fade-in mb-4">
-            Guia definitivo + inteligência do RH
+            Guia curriculo definitivo 2.0
           </h1>
           <p className="text-lg md:text-xl font-semibold mb-2 animate-fade-in text-[#add2fd]">
             Segunda versão do guia: mais de 300 vendidos na anterior
           </p>
           <p className="text-xl md:text-2xl font-medium mb-8 mt-2 animate-fade-in text-[#d9e6fb]">
-            Agora atualizado e com uma IA personalizada – tudo o que você precisa saber para montar um currículo matador, corrigido em minutos por inteligência artificial exclusiva para você.
+            Agora atualizado e com uma IA personalizada - use a mesma inteligencia artificial que te reprova automaticamente, ao seu favor
           </p>
           <div className="flex justify-center gap-4 animate-scale-in">
             <a
