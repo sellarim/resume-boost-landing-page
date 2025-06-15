@@ -125,30 +125,56 @@ const Index = () => {
         </a>
       </section>
 
-      {/* PROVA SOCIAL / TESTEMUNHOS */}
+      {/* NOVA SEÇÃO: Benefícios da IA */}
       <section className="w-full bg-white pb-16 pt-10 px-4 border-b border-[#e4eaff]">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] text-center">Transformou carreiras reais</h2>
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
-            {testimonials.map((dep, idx) => (
-              <div key={idx} className="bg-[#f3f6fa] rounded-xl shadow p-6 flex flex-col md:flex-row items-center gap-4 hover:scale-105 transition">
-                <img src={dep.img} alt="" className="w-16 h-16 rounded-full object-cover border-2 border-[#8f5cff]" />
-                <div className="flex-1">
-                  <p className="text-[#0a2540] text-base font-medium mb-2">"{dep.text}"</p>
-                  <span className="text-[#8f5cff] font-semibold">{dep.name}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="flex items-center justify-center gap-4 mt-10">
-            <img src="/photo-1498050108023-c5249f4df085" alt="Print currículo corrigido" className="w-[140px] h-[105px] object-cover rounded-lg shadow border border-[#e4eaff]" />
-            <img src="/photo-1461749280684-dccba630e2f6" alt="Print depoimento" className="w-[140px] h-[105px] object-cover rounded-lg shadow border border-[#e4eaff]" />
-            <img src="/photo-1488590528505-98d2b5aba04b" alt="Print LinkedIn" className="w-[140px] h-[105px] object-cover rounded-lg shadow border border-[#e4eaff]" />
-          </div>
-          <p className="text-center text-[#0a2540] mt-8 text-base">
-            <CheckCircle2 className="inline mb-1 text-[#22c55e]" size={22} />
-            Mais de <b>300 currículos corrigidos</b> na versão anterior e feedbacks verificados.
+        <div className="max-w-4xl mx-auto flex flex-col items-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] text-center flex items-center gap-2 mb-3">
+            <span className="text-2xl md:text-3xl">🚀</span>
+            A IA que te ajuda a montar o currículo perfeito
+          </h2>
+          <p className="text-lg text-[#474f60] text-center max-w-2xl mb-8">
+            Tenha uma inteligência artificial ao seu lado para corrigir, orientar e reescrever seu currículo com base no que o mercado realmente procura.
           </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-7">
+            {/* 1 */}
+            <div className="bg-[#f3f6fa] rounded-xl shadow flex flex-col items-center gap-2 text-center p-6 border border-[#e4eaff] transition hover:scale-105">
+              <span className="text-3xl mb-2">✍️</span>
+              <strong className="text-[#0a2540] text-base mb-1">Reescreve seu currículo do zero</strong>
+              <p className="text-[#4e5676] text-sm">
+                Receba uma nova versão do seu currículo com estrutura ideal, texto polido e foco no que mais importa para os recrutadores.
+              </p>
+            </div>
+            {/* 2 */}
+            <div className="bg-[#f3f6fa] rounded-xl shadow flex flex-col items-center gap-2 text-center p-6 border border-[#e4eaff] transition hover:scale-105">
+              <span className="text-3xl mb-2">❓</span>
+              <strong className="text-[#0a2540] text-base mb-1">Tira dúvidas sobre cada parte</strong>
+              <p className="text-[#4e5676] text-sm">
+                Não sabe o que colocar em “Resumo Profissional”? A IA te explica o que escrever e como adaptar ao seu momento.
+              </p>
+            </div>
+            {/* 3 */}
+            <div className="bg-[#f3f6fa] rounded-xl shadow flex flex-col items-center gap-2 text-center p-6 border border-[#e4eaff] transition hover:scale-105">
+              <span className="text-3xl mb-2">🧭</span>
+              <strong className="text-[#0a2540] text-base mb-1">Te orienta onde colocar cada informação</strong>
+              <p className="text-[#4e5676] text-sm">
+                Entenda o que deve ir em cada seção e evite erros comuns de organização que fazem o recrutador perder interesse.
+              </p>
+            </div>
+            {/* 4 */}
+            <div className="bg-[#f3f6fa] rounded-xl shadow flex flex-col items-center gap-2 text-center p-6 border border-[#e4eaff] transition hover:scale-105">
+              <span className="text-3xl mb-2">🎯</span>
+              <strong className="text-[#0a2540] text-base mb-1">Entrega palavras-chave que aumentam suas chances</strong>
+              <p className="text-[#4e5676] text-sm">
+                A IA analisa sua área de atuação e sugere termos que aumentam sua visibilidade em sistemas de triagem automática.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 mt-2 bg-[#e9f7ef] rounded-lg px-4 py-3">
+            <span className="text-[#22c55e] text-lg">✅</span>
+            <span className="text-[#0a2540] text-sm font-medium">
+              Já ajudou a corrigir mais de <b>300 currículos reais</b> e segue aprendendo com os melhores da área de dados.
+            </span>
+          </div>
         </div>
       </section>
 
