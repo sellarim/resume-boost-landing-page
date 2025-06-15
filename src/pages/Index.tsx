@@ -50,10 +50,10 @@ const Index = () => {
       <section className="w-full bg-[#0a2540] text-white pt-12 pb-16 md:py-20">
         <div className="max-w-3xl mx-auto text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight animate-fade-in mb-4">
-            Seu currículo pode estar sendo ignorado – <br className="hidden md:inline" /> veja os 3 erros que estão te eliminando antes mesmo da entrevista
+            Guia definitivo + inteligência do RH
           </h1>
           <p className="text-xl md:text-2xl font-medium mb-8 mt-2 animate-fade-in text-[#d9e6fb]">
-            Combo exclusivo: o guia definitivo + uma IA que corrige seu currículo em minutos e revela o que está te afastando dos recrutadores
+            Tudo que você precisa saber para montar um curriculo e uma IA personalizada para te ajudar a montar o seu curriculo definitivo
           </p>
           <div className="flex justify-center gap-4 animate-scale-in">
             <a
