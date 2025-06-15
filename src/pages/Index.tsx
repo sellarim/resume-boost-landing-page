@@ -106,9 +106,11 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-8 grid md:grid-cols-1 gap-6">
-            <div className="flex items-center gap-3 p-5 bg-[#f3f6fa] rounded-lg">
+            <div className="flex flex-col items-center justify-center gap-3 p-5 bg-[#f3f6fa] rounded-lg text-center">
               <Rocket size={28} className="text-[#8f5cff]" />
-              <span className="text-base font-medium text-[#0a2540]">Use a mesma IA dos recrutadores agora pra corrigir seu curriculo</span>
+              <span className="text-base font-medium text-[#0a2540]">
+                Use a mesma IA dos recrutadores agora pra corrigir seu curriculo
+              </span>
             </div>
             {/* Removido: grupo no WhatsApp */}
           </div>
