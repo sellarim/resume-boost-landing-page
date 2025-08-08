@@ -65,13 +65,13 @@ const Index = () => {
       <section className="w-full bg-[#0a2540] text-white pt-12 pb-16 md:py-20">
         <div className="max-w-3xl mx-auto text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight animate-fade-in mb-4">
-            IA de Currículo 2.0
+            IA de Currículo
           </h1>
           <p className="text-lg md:text-xl font-semibold mb-2 animate-fade-in text-[#add2fd]">
-            Segunda versão da IA: mais de 300 currículos corrigidos na anterior
+            Compatível com ATS • mais de 300 currículos corrigidos
           </p>
           <p className="text-xl md:text-2xl font-medium mb-8 mt-2 animate-fade-in text-[#d9e6fb]">
-            Uma IA de Currículo especializada: dá dicas, formata e revisa seu CV usando os mesmos critérios dos recrutadores — a seu favor.
+            IA de Currículo especialista em ATS: formata, revisa e otimiza seu CV com os mesmos critérios que filtram candidatos (ATS) — agora a seu favor.
           </p>
           <div className="flex justify-center gap-4 animate-scale-in">
             <a
@@ -114,7 +114,7 @@ const Index = () => {
             <div className="flex flex-col items-center justify-center gap-3 p-5 bg-[#f3f6fa] rounded-lg text-center">
               <Rocket size={28} className="text-[#8f5cff]" />
               <span className="text-base font-medium text-[#0a2540]">
-                Use a mesma IA dos recrutadores agora pra corrigir seu curriculo
+                Use a mesma IA dos recrutadores (ATS) agora a seu favor para corrigir seu currículo
               </span>
             </div>
             {/* Removido: grupo no WhatsApp */}
