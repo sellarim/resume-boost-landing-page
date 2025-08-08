@@ -43,8 +43,8 @@ const precoOriginal = "R$79,90";
 const precoPromocional = "R$29,90";
 const tituloPreco = "Não perca a chance de turbinar seu currículo e sua carreira!";
 const vantagens = [
-  "Acesso imediato ao Guia prático do Currículo com todos os segredos para se destacar",
-  "Inteligência Artificial exclusiva que analisa e corrige seu currículo em minutos",
+  "Acesso imediato à IA de Currículo para se destacar com rapidez",
+  "IA especializada que dá dicas, formata e revisa seu currículo em minutos",
   "Exemplos validados por profissionais de dados e tech já empregados",
   "Suporte para dúvidas sobre cada seção do currículo",
 ];
@@ -65,13 +65,13 @@ const Index = () => {
       <section className="w-full bg-[#0a2540] text-white pt-12 pb-16 md:py-20">
         <div className="max-w-3xl mx-auto text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight animate-fade-in mb-4">
-            Guia curriculo definitivo 2.0
+            IA de Currículo 2.0
           </h1>
           <p className="text-lg md:text-xl font-semibold mb-2 animate-fade-in text-[#add2fd]">
-            Segunda versão do guia: mais de 300 vendidos na anterior
+            Segunda versão da IA: mais de 300 currículos corrigidos na anterior
           </p>
           <p className="text-xl md:text-2xl font-medium mb-8 mt-2 animate-fade-in text-[#d9e6fb]">
-            Agora atualizado e com uma IA personalizada - use a mesma inteligencia artificial que te reprova automaticamente, ao seu favor
+            Uma IA de Currículo especializada: dá dicas, formata e revisa seu CV usando os mesmos critérios dos recrutadores — a seu favor.
           </p>
           <div className="flex justify-center gap-4 animate-scale-in">
             <a
@@ -261,7 +261,7 @@ const Index = () => {
             Uma comunidade que cresce junto com você
           </h2>
           <p className="text-lg text-[#474f60] text-center mb-3">
-            Ao comprar o Guia, você também entra para um espaço colaborativo exclusivo com quem está na mesma jornada — e com acesso direto a mim, aos colegas e à IA.
+            Ao assinar a IA de Currículo, você entra em um espaço colaborativo exclusivo com quem está na mesma jornada — e com acesso direto a mim, aos colegas e à IA.
           </p>
           <div className="bg-white rounded-xl shadow p-6 md:p-8 my-4 w-full text-[#0a2540]">
             <p className="mb-5 text-base text-center">
@@ -305,7 +305,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-5 text-[#3b2d84] font-semibold text-center text-base flex items-center gap-2">
-            O conhecimento vai além do guia — a comunidade é onde você cresce junto com quem está construindo o mesmo futuro.
+            O conhecimento vai além da IA — a comunidade é onde você cresce junto com quem está construindo o mesmo futuro.
           </div>
         </div>
       </section>
@@ -356,7 +356,7 @@ const Index = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-4 animate-fade-in">
           Essa é sua chance de sair na frente antes que as melhores vagas sejam preenchidas.
         </h2>
-        <p className="text-lg text-[#d9e6fb] text-center mb-8 max-w-xl animate-fade-in">Não perca tempo com currículos que te sabotam: acesse o Guia Definitivo do Currículo agora e saia na frente no mercado tech.</p>
+        <p className="text-lg text-[#d9e6fb] text-center mb-8 max-w-xl animate-fade-in">Não perca tempo com currículos que te sabotam: acesse a IA de Currículo agora e saia na frente no mercado tech.</p>
         <a
           href="https://checkout-link-exemplo.com"
           className={ctaButton + " " + ctaHighlightPurple + " text-xl"}
@@ -367,7 +367,7 @@ const Index = () => {
 
       {/* Rodapé Simples */}
       <footer className="w-full bg-[#0a2540] text-[#d9e6fb] py-6 text-center text-sm">
-        &copy; 2025 Guia Definitivo do Currículo. Todos os direitos reservados.
+        &copy; 2025 IA de Currículo. Todos os direitos reservados.
       </footer>
     </div>
   );
