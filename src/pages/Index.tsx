@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp, MessageCircle, CheckCircle2, FileText, FileSearch2, Rocket, BookText, Users2, Star } from "lucide-react";
+import ATSComparison from "@/components/ATSComparison";
 
 // Resolve image URLs relative to this file so Vite includes them in the build
 // and generates paths that work with the GitHub Pages base URL.
-import antesImg from "@/assets/antes-ats.png";
-import depoisImg from "@/assets/depois-ats.png";
 
 // Depoimentos mockados:
 const testimonials = [
@@ -179,50 +178,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ANTES E DEPOIS */}
-      <section className="w-full bg-[#f3f6fa] py-16 px-4 border-b border-[#e4eaff]">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] text-center mb-10">Antes e Depois: Veja a diferença</h2>
-          <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
-            {/* Antes */}
-            <div className="flex-1 bg-white rounded-xl p-6 shadow text-center border border-[#e6eaff] min-w-[280px] max-w-[370px] h-[420px] flex flex-col justify-between md:h-[420px]">
-              <div>
-                <span className="inline-block px-3 py-1 bg-[#e6eaff] text-[#6b7791] font-bold mb-3 rounded">ANTES</span>
-                <img
-                  src={antesImg}
-                  alt="Currículo não compatível com ATS — erros e formatação ruim"
-                  className="w-full max-w-xs h-40 object-contain rounded mt-2 mb-5 mx-auto"
-                  style={{ background: "transparent" }}
-                />
-              </div>
-              <ul className="text-sm text-[#6b7791] text-left list-disc px-4 flex-1 flex flex-col justify-start gap-2">
-                <li>Formato não compatível com ATS (tabelas, ícones e imagens em excesso)</li>
-                <li>Falta de palavras-chave da vaga e termos técnicos relevantes</li>
-                <li>Texto denso, sem métricas ou resultados claros</li>
-                <li>Erros de ortografia e inconsistências de estilo</li>
-              </ul>
-            </div>
-            {/* Depois */}
-            <div className="flex-1 bg-[#0a2540] text-white rounded-xl p-6 shadow text-center border border-[#8f5cff] min-w-[280px] max-w-xs h-[420px] flex flex-col justify-between md:h-[420px]">
-              <div>
-                <span className="inline-block px-3 py-1 bg-[#8f5cff] text-white font-bold mb-3 rounded">DEPOIS</span>
-                <img
-                  src={depoisImg}
-                  alt="Currículo otimizado para ATS — claro, escaneável e com palavras-chave"
-                  className="w-full max-w-xs h-40 object-contain rounded mt-2 mb-5 mx-auto"
-                  style={{ background: "transparent" }}
-                />
-              </div>
-              <ul className="text-sm text-[#d9e6fb] text-left list-disc px-4 flex-1 flex flex-col justify-start gap-2">
-                <li>Layout limpo e escaneável por ATS (hierarquia clara de seções)</li>
-                <li>Palavras-chave estratégicas alinhadas à vaga</li>
-                <li>Bullet points com métricas e impacto (ex: +35% eficiência)</li>
-                <li>Formatação padrão (sem tabelas/ícones), fácil de ler e comparar</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ATSComparison />
 
       {/* NOVA SESSÃO DE PREÇO */}
       <section className="w-full flex justify-center py-6 bg-white border-b border-[#e4eaff]">
