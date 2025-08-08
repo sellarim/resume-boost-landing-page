@@ -40,7 +40,7 @@ const faqs = [
 ];
 
 const precoOriginal = "R$79,90";
-const precoPromocional = "R$29,90";
+const precoPromocional = "R$ 27,98";
 const tituloPreco = "Não perca a chance de turbinar seu currículo e sua carreira!";
 const vantagens = [
   "Acesso imediato à IA de Currículo para se destacar com rapidez",
