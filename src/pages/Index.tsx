@@ -3,8 +3,8 @@ import { ChevronDown, ChevronUp, MessageCircle, CheckCircle2, FileText, FileSear
 
 // Resolve image URLs relative to this file so Vite includes them in the build
 // and generates paths that work with the GitHub Pages base URL.
-const antesImg = new URL("../../public/lovable-uploads/a42d453d-859a-4160-a9a7-7b70b0cfcc67.png", import.meta.url).href;
-const depoisImg = new URL("../../public/lovable-uploads/c8d0b988-c458-4bc1-9a9f-593ad8209b49.png", import.meta.url).href;
+import antesImg from "@/assets/antes-ats.png";
+import depoisImg from "@/assets/depois-ats.png";
 
 // Depoimentos mockados:
 const testimonials = [
@@ -190,16 +190,16 @@ const Index = () => {
                 <span className="inline-block px-3 py-1 bg-[#e6eaff] text-[#6b7791] font-bold mb-3 rounded">ANTES</span>
                 <img
                   src={antesImg}
-                  alt="Exemplo de currículo com estrutura errada"
+                  alt="Currículo não compatível com ATS — erros e formatação ruim"
                   className="w-full max-w-xs h-40 object-contain rounded mt-2 mb-5 mx-auto"
                   style={{ background: "transparent" }}
                 />
               </div>
               <ul className="text-sm text-[#6b7791] text-left list-disc px-4 flex-1 flex flex-col justify-start gap-2">
-                <li>Erros de digitação e ortografia (ex: "Posttion", "Fducation")</li>
-                <li>Seções mal organizadas e confusas</li>
-                <li>Layout difícil de ler; texto muito colado</li>
-                <li>Falta de informações relevantes e exemplos claros</li>
+                <li>Formato não compatível com ATS (tabelas, ícones e imagens em excesso)</li>
+                <li>Falta de palavras-chave da vaga e termos técnicos relevantes</li>
+                <li>Texto denso, sem métricas ou resultados claros</li>
+                <li>Erros de ortografia e inconsistências de estilo</li>
               </ul>
             </div>
             {/* Depois */}
@@ -208,16 +208,16 @@ const Index = () => {
                 <span className="inline-block px-3 py-1 bg-[#8f5cff] text-white font-bold mb-3 rounded">DEPOIS</span>
                 <img
                   src={depoisImg}
-                  alt="Currículo Depois"
+                  alt="Currículo otimizado para ATS — claro, escaneável e com palavras-chave"
                   className="w-full max-w-xs h-40 object-contain rounded mt-2 mb-5 mx-auto"
                   style={{ background: "transparent" }}
                 />
               </div>
               <ul className="text-sm text-[#d9e6fb] text-left list-disc px-4 flex-1 flex flex-col justify-start gap-2">
-                <li>Layout valorizado e leitura escaneável</li>
-                <li>Resumo otimizado, sem enrolação</li>
-                <li>Linguagem alinhada para vagas de dados e tech</li>
-                {/* Ajuste de "invisible" removido para manter alinhamento pelo padding geral. */}
+                <li>Layout limpo e escaneável por ATS (hierarquia clara de seções)</li>
+                <li>Palavras-chave estratégicas alinhadas à vaga</li>
+                <li>Bullet points com métricas e impacto (ex: +35% eficiência)</li>
+                <li>Formatação padrão (sem tabelas/ícones), fácil de ler e comparar</li>
               </ul>
             </div>
           </div>
