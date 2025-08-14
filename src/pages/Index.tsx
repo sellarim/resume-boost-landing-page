@@ -121,6 +121,53 @@ const Index = () => {
         </div>
       </section>
 
+      {/* SEÇÃO ATS SUPORTADOS */}
+      <section className="w-full bg-[#f8fafd] py-12 px-4 border-b border-[#e4eaff]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] mb-3">
+            Compatível com os principais sistemas ATS do Brasil
+          </h2>
+          <p className="text-lg text-[#474f60] mb-8 max-w-2xl mx-auto">
+            Nossa IA é treinada para otimizar seu currículo especificamente para os sistemas de triagem mais usados pelas empresas brasileiras
+          </p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            {[
+              { name: "Gupy", desc: "Líder em recrutamento no Brasil" },
+              { name: "Solides", desc: "Usado por empresas de todos os portes" },
+              { name: "InHire", desc: "Focado em vagas de tecnologia" },
+              { name: "Pandapé", desc: "Plataforma de RH completa" },
+              { name: "Abler", desc: "Sistema inteligente de triagem" },
+              { name: "JobConvo", desc: "IA para seleção de candidatos" }
+            ].map((ats, index) => (
+              <div key={index} className="bg-white rounded-lg p-4 shadow-sm border border-[#e4eaff] hover:shadow-md transition-shadow">
+                <div className="flex items-center justify-center mb-2">
+                  <div className="w-8 h-8 bg-[#8f5cff] rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">{ats.name.charAt(0)}</span>
+                  </div>
+                </div>
+                <h3 className="font-semibold text-[#0a2540] text-sm mb-1">{ats.name}</h3>
+                <p className="text-xs text-[#6b7791]">{ats.desc}</p>
+              </div>
+            ))}
+          </div>
+          
+          <div className="bg-white rounded-xl p-6 shadow-sm border border-[#e4eaff]">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <div className="w-10 h-10 bg-[#22c55e] rounded-full flex items-center justify-center">
+                <CheckCircle2 size={20} className="text-white" />
+              </div>
+              <span className="text-lg font-semibold text-[#0a2540]">
+                Formato otimizado para todos esses sistemas
+              </span>
+            </div>
+            <p className="text-[#474f60] text-sm max-w-xl mx-auto">
+              Sua IA analisa e formata seu currículo seguindo as melhores práticas para passar pelos filtros automáticos e chegar até o recrutador
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA DE ACESSO REPETIDO */}
       <section id="cta" className="w-full flex justify-center py-10 bg-[#f5f8fd] border-b border-[#e4eaff]">
         <a
