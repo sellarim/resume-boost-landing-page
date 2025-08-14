@@ -125,44 +125,46 @@ const Index = () => {
       <section className="w-full bg-[#f8fafd] py-12 px-4 border-b border-[#e4eaff]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] mb-3">
-            Compatível com os principais sistemas ATS do Brasil
+            Supere todas essas IAs de recrutamento
           </h2>
           <p className="text-lg text-[#474f60] mb-8 max-w-2xl mx-auto">
-            Nossa IA é treinada para otimizar seu currículo especificamente para os sistemas de triagem mais usados pelas empresas brasileiras
+            Nossa IA conhece exatamente como funcionam os algoritmos dos principais sistemas ATS do Brasil e formata seu currículo para passar por todos eles
           </p>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
             {[
-              { name: "Gupy", desc: "Líder em recrutamento no Brasil" },
-              { name: "Solides", desc: "Usado por empresas de todos os portes" },
-              { name: "InHire", desc: "Focado em vagas de tecnologia" },
-              { name: "Pandapé", desc: "Plataforma de RH completa" },
-              { name: "Abler", desc: "Sistema inteligente de triagem" },
-              { name: "JobConvo", desc: "IA para seleção de candidatos" }
+              { name: "Gupy", desc: "Líder em recrutamento", bg: "bg-[#00d4aa]", text: "text-white" },
+              { name: "Solides", desc: "Empresas de todos os portes", bg: "bg-[#ff6b35]", text: "text-white" },
+              { name: "InHire", desc: "Focado em tecnologia", bg: "bg-[#2563eb]", text: "text-white" },
+              { name: "Pandapé", desc: "Plataforma de RH", bg: "bg-[#7c3aed]", text: "text-white" },
+              { name: "Abler", desc: "Sistema inteligente", bg: "bg-[#059669]", text: "text-white" },
+              { name: "JobConvo", desc: "IA para seleção", bg: "bg-[#dc2626]", text: "text-white" }
             ].map((ats, index) => (
-              <div key={index} className="bg-white rounded-lg p-4 shadow-sm border border-[#e4eaff] hover:shadow-md transition-shadow">
-                <div className="flex items-center justify-center mb-2">
-                  <div className="w-8 h-8 bg-[#8f5cff] rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">{ats.name.charAt(0)}</span>
+              <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-[#e4eaff] hover:shadow-xl transition-all hover:scale-105">
+                <div className="flex flex-col items-center">
+                  <div className={`w-16 h-16 ${ats.bg} rounded-xl flex items-center justify-center mb-3 shadow-lg`}>
+                    <span className={`${ats.text} font-bold text-xl`}>
+                      {ats.name.length <= 4 ? ats.name : ats.name.substring(0, 2)}
+                    </span>
                   </div>
+                  <h3 className="font-bold text-[#0a2540] text-lg mb-1">{ats.name}</h3>
+                  <p className="text-sm text-[#6b7791] text-center">{ats.desc}</p>
                 </div>
-                <h3 className="font-semibold text-[#0a2540] text-sm mb-1">{ats.name}</h3>
-                <p className="text-xs text-[#6b7791]">{ats.desc}</p>
               </div>
             ))}
           </div>
           
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-[#e4eaff]">
-            <div className="flex items-center justify-center gap-3 mb-3">
-              <div className="w-10 h-10 bg-[#22c55e] rounded-full flex items-center justify-center">
-                <CheckCircle2 size={20} className="text-white" />
+          <div className="bg-gradient-to-r from-[#22c55e] to-[#16a34a] rounded-xl p-6 shadow-lg text-white">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                <CheckCircle2 size={24} className="text-white" />
               </div>
-              <span className="text-lg font-semibold text-[#0a2540]">
-                Formato otimizado para todos esses sistemas
+              <span className="text-xl font-bold">
+                Nossa IA vence todas essas IAs
               </span>
             </div>
-            <p className="text-[#474f60] text-sm max-w-xl mx-auto">
-              Sua IA analisa e formata seu currículo seguindo as melhores práticas para passar pelos filtros automáticos e chegar até o recrutador
+            <p className="text-white/90 text-base max-w-2xl mx-auto">
+              Enquanto essas IAs rejeitam currículos, a nossa te ensina exatamente como formatar e escrever para passar por todos esses filtros automáticos e chegar diretamente ao recrutador
             </p>
           </div>
         </div>
