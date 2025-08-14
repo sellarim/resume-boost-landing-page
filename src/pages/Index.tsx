@@ -59,7 +59,7 @@ const Index = () => {
   const ctaHighlightGreen = "bg-[#22c55e] hover:bg-[#16a34a]";
 
   return (
-    <div className="bg-[#f8fafd] min-h-screen w-full flex flex-col items-center scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen">
+    <div className="bg-[#f8fafd] min-h-screen w-full flex flex-col items-center scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen" style={{ scrollBehavior: 'smooth', scrollSnapType: 'y mandatory', scrollSnapPointsY: 'repeat(100vh)' }}>
       {/* HERO / HEADLINE */}
       <section className="w-full bg-[#0a2540] text-white pt-12 pb-16 md:py-20 snap-start">
         <div className="max-w-3xl mx-auto text-center px-4">
