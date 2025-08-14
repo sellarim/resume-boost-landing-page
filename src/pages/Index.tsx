@@ -59,9 +59,9 @@ const Index = () => {
   const ctaHighlightGreen = "bg-[#22c55e] hover:bg-[#16a34a]";
 
   return (
-    <div className="bg-[#f8fafd] min-h-screen w-full flex flex-col items-center">
+    <div className="bg-[#f8fafd] min-h-screen w-full flex flex-col items-center scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen">
       {/* HERO / HEADLINE */}
-      <section className="w-full bg-[#0a2540] text-white pt-12 pb-16 md:py-20">
+      <section className="w-full bg-[#0a2540] text-white pt-12 pb-16 md:py-20 snap-start">
         <div className="max-w-3xl mx-auto text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight animate-fade-in mb-4">
             IA de Currículo
@@ -92,7 +92,7 @@ const Index = () => {
       </section>
 
       {/* O QUE VOCÊ RECEBE */}
-      <section className="w-full bg-white py-14 px-4 border-b border-[#e4eaff]">
+      <section className="w-full bg-white py-14 px-4 border-b border-[#e4eaff] snap-start min-h-screen flex items-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] text-center mb-8">O que você vai receber?</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -122,7 +122,7 @@ const Index = () => {
       </section>
 
       {/* SEÇÃO ATS SUPORTADOS */}
-      <section className="w-full bg-[#f8fafd] py-12 px-4 border-b border-[#e4eaff]">
+      <section className="w-full bg-[#f8fafd] py-12 px-4 border-b border-[#e4eaff] snap-start min-h-screen flex items-center">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] mb-3">
             Supere todas essas IAs de recrutamento
@@ -171,7 +171,7 @@ const Index = () => {
       </section>
 
       {/* CTA DE ACESSO REPETIDO */}
-      <section id="cta" className="w-full flex justify-center py-10 bg-[#f5f8fd] border-b border-[#e4eaff]">
+      <section id="cta" className="w-full flex justify-center py-10 bg-[#f5f8fd] border-b border-[#e4eaff] snap-start">
         <a
           href="https://checkout-link-exemplo.com"
           className={ctaButton + " " + ctaHighlightGreen + " text-xl"}
@@ -181,7 +181,7 @@ const Index = () => {
       </section>
 
       {/* NOVA SEÇÃO: Benefícios da IA */}
-      <section className="w-full bg-white pb-16 pt-10 px-4 border-b border-[#e4eaff]">
+      <section className="w-full bg-white pb-16 pt-10 px-4 border-b border-[#e4eaff] snap-start min-h-screen flex items-center">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] text-center flex items-center gap-2 mb-3">
             <span className="text-2xl md:text-3xl">🚀</span>
@@ -204,7 +204,7 @@ const Index = () => {
               <span className="text-3xl mb-2">❓</span>
               <strong className="text-[#0a2540] text-base mb-1">Tira dúvidas sobre cada parte</strong>
               <p className="text-[#4e5676] text-sm">
-                Não sabe o que colocar em “Resumo Profissional”? A IA te explica o que escrever e como adaptar ao seu momento.
+                Não sabe o que colocar em "Resumo Profissional"? A IA te explica o que escrever e como adaptar ao seu momento.
               </p>
             </div>
             {/* 3 */}
@@ -230,7 +230,7 @@ const Index = () => {
       <ATSComparison />
 
       {/* NOVA SESSÃO DE PREÇO */}
-      <section className="w-full flex justify-center py-6 bg-white border-b border-[#e4eaff]">
+      <section className="w-full flex justify-center py-6 bg-white border-b border-[#e4eaff] snap-start min-h-screen items-center">
         <div className="bg-[#f8fafd] rounded-2xl shadow-lg p-7 pb-8 max-w-md w-full flex flex-col items-center border border-[#e4eaff]">
           <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-[#0a2540]">{tituloPreco}</h3>
           <ul className="mb-6 space-y-2 text-[#0a2540] text-base">
@@ -259,7 +259,7 @@ const Index = () => {
       </section>
 
       {/* NOVA SEÇÃO - Comunidade */}
-      <section className="w-full py-14 px-4 bg-[#f3f6fa] border-b border-[#e4eaff]">
+      <section className="w-full py-14 px-4 bg-[#f3f6fa] border-b border-[#e4eaff] snap-start min-h-screen flex items-center">
         <div className="max-w-3xl mx-auto flex flex-col items-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] mb-3 flex items-center gap-2">
             <span className="text-2xl md:text-3xl">🤝</span>
@@ -316,7 +316,7 @@ const Index = () => {
       </section>
 
       {/* FAQ */}
-      <section className="w-full bg-white py-14 px-4 border-b border-[#e4eaff]">
+      <section className="w-full bg-white py-14 px-4 border-b border-[#e4eaff] snap-start min-h-screen flex items-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0a2540] text-center mb-8">Perguntas frequentes</h2>
           <div className="divide-y border-t border-b">
@@ -344,7 +344,7 @@ const Index = () => {
       </section>
 
       {/* GARANTIA */}
-      <section className="w-full py-12 bg-[#0a2540] text-white px-4 border-b border-[#191c23]">
+      <section className="w-full py-12 bg-[#0a2540] text-white px-4 border-b border-[#191c23] snap-start">
         <div className="max-w-2xl mx-auto flex flex-col items-center text-center">
           <div className="flex items-center gap-2 mb-2">
             <CheckCircle2 className="text-[#22c55e]" size={28} />
@@ -357,7 +357,7 @@ const Index = () => {
       </section>
 
       {/* CTA FINAL COM URGÊNCIA */}
-      <section className="w-full py-14 px-4 bg-gradient-to-r from-[#0a2540] to-[#3b2d84] flex flex-col items-center">
+      <section className="w-full py-14 px-4 bg-gradient-to-r from-[#0a2540] to-[#3b2d84] flex flex-col items-center snap-start">
         <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-4 animate-fade-in">
           Essa é sua chance de sair na frente antes que as melhores vagas sejam preenchidas.
         </h2>
@@ -371,7 +371,7 @@ const Index = () => {
       </section>
 
       {/* Rodapé Simples */}
-      <footer className="w-full bg-[#0a2540] text-[#d9e6fb] py-6 text-center text-sm">
+      <footer className="w-full bg-[#0a2540] text-[#d9e6fb] py-6 text-center text-sm snap-start">
         &copy; 2025 IA de Currículo. Todos os direitos reservados.
       </footer>
     </div>
